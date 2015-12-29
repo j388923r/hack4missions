@@ -10,5 +10,8 @@ myApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/', {
 	  controller : 'homeController',
 	  templateUrl : '/angularviews/home.html'
+  }).when('/learn', {
+	  controller : 'learnController',
+	  templateUrl : '/angularviews/learn.html'
   });
 }]);

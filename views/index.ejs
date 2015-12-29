@@ -3,9 +3,11 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-animate.js">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js">
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+	<div ng-view></div>
   </body>
 </html>

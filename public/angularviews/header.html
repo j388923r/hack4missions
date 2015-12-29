@@ -1,10 +1,43 @@
 
-<img class='header-logo' src='header.png'>
-<h2>Intervarsity Digital</h2>
-<h1>#thisisreallife</h1>
+<div class="header">
+  <img class='header-logo' src='images/mocklogo.png'>
+  <div class='header-title'>
+    <h3 class='header-iv'>Intervarsity Digital</h3>
+    <h1 class='header-rl'>#thisisreallife</h1>
+  </div>
+</div>
 
-<ul>
+<ul class="nav">
   <li>Connect</li>
   <li>Learn</li>
   <li>Ask</li>
 </ul>
+
+<style>
+  .header { margin-bottom: 25px; }
+
+  .header-title, .header-title h1, .header-title h2 {
+    display: inline-block;
+  }
+
+  .header-iv, .header-rl {
+    padding: 5px;
+    margin: 0;
+  }
+
+  .header-logo {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+  }
+
+  ul.nav li {
+    list-style-type:none;
+    display: inline;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin: 5px;
+    background: white;
+    box-sizing: border-box;
+  }
+</style>

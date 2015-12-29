@@ -40,5 +40,8 @@ myApp.config(['$routeProvider', function($routeProvider) {
   }).when('/podcasts/:id', {
 	  controller : 'podcastController',
 	  templateUrl : '/angularviews/podcast.html'
+  }).when('/ask', {
+	  controller : 'askController',
+	  templateUrl : '/angularviews/ask.html'	 
   });
 }]);

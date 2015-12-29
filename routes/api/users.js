@@ -10,4 +10,8 @@ router.get('/:id', function(req, res, next) {
   res.send("Returning user with id: " + req.params.id);
 });
 
+router.post('/search', function(req, res, next) {
+    users.findByTags(req.query.tags);
+});
+
 module.exports = router;

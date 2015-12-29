@@ -1,5 +1,5 @@
 var myApp = angular.module('myApp');
 
-myApp.controller('ConnectController', ['$scope', function($scope) {
+myApp.controller('connectController', ['$scope', function($scope) {
   $scope.greeting = 'Hola!';
 }]);

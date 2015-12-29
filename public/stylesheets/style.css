@@ -1,6 +1,6 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #6495ED;
 }
 
 a {
@@ -9,9 +9,16 @@ a {
 
 .homePageButton {
 	width: 50%;
-	background-color: blue;
 	height: 25%;
 	padding: 20px;
-	color: white;
+	margin: 20px;
 	border-radius: 5px;
+}
+
+#connectButton {
+	margin-top: 20%;
+}
+
+#learnButton {
+	//margin-top: 60%;
 }

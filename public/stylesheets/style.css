@@ -15,6 +15,10 @@ a {
 	border-radius: 5px;
 }
 
+.typeHeader {
+	font-size: 8em;
+}
+
 #connectButton {
 	margin-top: 20%;
 }

@@ -16,6 +16,9 @@ myApp.config(['$routeProvider', function($routeProvider) {
   }).when('/connect', {
 	  controller : 'connectController',
 	  templateUrl : '/angularViews/connect.html'
+  }).when('/users/:id', {
+  	  controller : 'userController',
+  	  templateUrl : '/angularViews/userView.html'
   }).when('/category', {
 	  controller : 'categoryController',
 	  templateUrl : '/angularViews/category.html'

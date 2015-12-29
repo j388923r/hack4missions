@@ -1,3 +1,12 @@
 <center>
 	<h2 class="typeHeader">Podcasts</h2>
 </center>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 col-sm-6" ng-repeat="item in podcasts">
+			<img ng-src="{{item.imageUrl}}" width=200 height=200>
+			<h4>{{item.title}}</h4>
+			<div>{{item.description}}</div>
+		</div>
+	</div>
+</div>

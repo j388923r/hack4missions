@@ -13,5 +13,8 @@ myApp.config(['$routeProvider', function($routeProvider) {
   }).when('/learn', {
 	  controller : 'learnController',
 	  templateUrl : '/angularviews/learn.html'
+  }).when('/connect', {
+	  controller : 'connectController',
+	  templateUrl : '/angularViews/connect.html'
   });
 }]);

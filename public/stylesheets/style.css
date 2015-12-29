@@ -6,3 +6,12 @@ body {
 a {
   color: #00B7FF;
 }
+
+.homePageButton {
+	width: 50%;
+	background-color: blue;
+	height: 25%;
+	padding: 20px;
+	color: white;
+	border-radius: 5px;
+}

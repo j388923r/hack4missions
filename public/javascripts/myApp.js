@@ -15,10 +15,10 @@ myApp.config(['$routeProvider', function($routeProvider) {
 	  templateUrl : '/angularviews/learn.html'
   }).when('/connect', {
 	  controller : 'connectController',
-	  templateUrl : '/angularViews/connect.html'
+	  templateUrl : '/angularviews/connect.html'
   }).when('/category', {
 	  controller : 'categoryController',
-	  templateUrl : '/angularViews/category.html'
+	  templateUrl : '/angularviews/category.html'
   }).when('/articles', {
 	  controller : 'articlesController',
 	  templateUrl : '/angularviews/articles.html'

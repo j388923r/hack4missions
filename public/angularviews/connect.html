@@ -5,10 +5,6 @@
 <div ng-include src="'angularviews/header.html'"></div>
 <div class="container-fluid">
 	<div id="wrap">
-		<center class="tagSearch">
-		    <input type="text" name="tags" id="tags_input" autofocus />
-		    <input type="submit" value="Submit" id="tags_submit" />
-		</center>
 		<div class="tagSection">
 			<a class="primaryTagButton" href="#" id="creativeTag">
 				<div class="col-md-4 col-xs-4">
@@ -26,28 +22,21 @@
 				</div>
 			</a>
 		</div>
-		<div id="tagSubsection">
+		<div id="tagSubsection" ng-repeat="subsection in subsection_list">
 			<a>
-				<div class="col-md-2 col-xs-2">
-					<p class="interestSubtag">hiasdgaf</p>
-				</div>
-			</a>
-			<a>
-				<div class="col-md-2 col-xs-2">
-					<p class="interestSubtag">hiasdgaf</p>
-				</div>
-			</a>
-			<a>
-				<div class="col-md-2 col-xs-2">
-					<p class="interestSubtag">hiasdgaf</p>
-				</div>
-			</a>
-			<a>
-				<div class="col-md-2 col-xs-2">
-					<p class="interestSubtag">hiasdgaf</p>
+				<div class="col-md-4 col-xs-4">
+					<p class="interestSubtag">{{subsection}}</p>
 				</div>
 			</a>
 		</div>
+		
+		<center class="tagSearch">
+		    <select class="mentor-search" data-placeholder="Search by name">
+		    	<option></option>
+		    	<option value="John Doe">John Doe</option>
+		    	<option value="Alice Liu">Alice Liu</option>
+		    </select>
+	    </center>
 	    <div id="mentor_names">
 	    </div>
 	</div>

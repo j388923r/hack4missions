@@ -1,9 +1,14 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 120%;
 }
 
 a {
   color: #00B7FF;
+}
+
+a {
+	color: #1d77bd;
 }
 
 div.home-center, div.home-footer {
@@ -67,7 +72,7 @@ div.home-footer a {
 }
 
 #creativeTag {
-
+    font-size: 200%;
 }
 #gamingTag {
 
@@ -81,12 +86,12 @@ div.home-footer a {
 }
 
 #category h1{
-    background-color: orange;
+    background-color: #e36f1e;
     text-align: center;
 }
 
 #type h1{
-    background-color: orange;   
+    background-color: #e36f1e;   
     text-align: center;
 }
 

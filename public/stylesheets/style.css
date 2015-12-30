@@ -34,7 +34,13 @@ a {
 	padding-top:2%;
 }
 .interestTag {
-
+	background-color:#fff;
+	padding:2% 0;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	border:1px solid #c0c0c0;
+	border-radius:4px;
 }
 #creativeTag {
 

@@ -1,3 +1,6 @@
-<div ng-include src="'angularviews/header.html'"></div>
-
-<h2>This is real life</h2>
+<div id="header" ng-include src="'angularviews/header.html'"></div>
+<center>
+	<img ng-src="{{article.imageUrl}}">
+</center>
+<a href="{{article.link}}" target="_blank"><h4>{{article.title}}</h4></a>
+<div>{{article.description}}</div>

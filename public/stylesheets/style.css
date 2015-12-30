@@ -1,10 +1,14 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #6495ED;
+  height: 120%;
 }
 
 a {
   color: #00B7FF;
+}
+
+a {
+	color: #1d77bd;
 }
 
 div.home-center, div.home-footer {
@@ -24,14 +28,13 @@ div.home-center img {
 div.home-footer {
   text-align: center;
   font-size: 2.5em;
-  color: white;
   position: fixed;
   width: 100%;
   bottom: 50px;
 }
 
 div.home-footer a {
-  color: black;
+  color: #1d77bd;
 }
 
 .homePageButton {
@@ -40,6 +43,7 @@ div.home-footer a {
   padding: 40px 20px;
   margin-bottom: 60px;
   border-radius: 25px;
+  border: 1px solid #e36f1e;
 }
 
 .homePageButton div {
@@ -65,7 +69,6 @@ div.home-footer a {
 #header .container {
 	position: fixed;
 	bottom: 0;
-<<<<<<< HEAD
 }
 
 #creativeTag {
@@ -95,6 +98,8 @@ div.home-footer a {
 #category_title{
     text-align: center;
     color: greenyellow;
-=======
->>>>>>> 1bb0867627dbca0fef40cd19fa2d1e098b351a12
+}
+
+div.col-md-4 {
+  display: inline;
 }

@@ -25,7 +25,8 @@ router.get('/', function(req, res, next) {
 
 /* GET */
 router.get('/:id', function(req, res, next) {
-	Article.findById(req.params.id, function(err, article) {
+	console.log(req.params.id);
+	Article.findWithId(req.params.id, function(err, article) {
 		if(err) {
 			console.log(err);
 			res.send(err);
@@ -50,16 +51,17 @@ router.post('/', function(req, res, next) {
 	console.log(link);
 	console.log(tags);
 	
-	/*Article.create(title, imageUrl, link, description, tags, function(err, article) {
+	Article.create(title, imageUrl, link, description, tags, function(err, article) {
+		console.log("created");
 		if(err) {
 			console.log(err);
 			res.send(err);
 		} else {
 			res.json(article);
 		}
-	});*/
+	});
 	
-	res.send("Created");
+	//res.send("Created");
 	
 });
 

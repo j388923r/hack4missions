@@ -16,7 +16,11 @@ myApp.config(['$routeProvider', function($routeProvider) {
   }).when('/connect', {
 	  controller : 'connectController',
 	  templateUrl : '/angularviews/connect.html'
+<<<<<<< HEAD
   }).when('/category/:tag', {
+=======
+  }).when('/category/:id', {
+>>>>>>> 12f43d854a15650e25a9a41007af4c5e21e647c0
 	  controller : 'categoryController',
 	  templateUrl : '/angularviews/category.html'
   }).when('/articles', {
@@ -40,5 +44,8 @@ myApp.config(['$routeProvider', function($routeProvider) {
   }).when('/ask', {
 	  controller : 'askController',
 	  templateUrl : '/angularviews/ask.html'	 
+  }).when('/userView', {
+	controller : 'userViewController',
+	templateUrl : '/angularviews/userView.html'
   });
 }]);

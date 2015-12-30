@@ -2,25 +2,15 @@ var myApp = angular.module('myApp');
 
 myApp.controller('connectController', ['$scope', function($scope) {
     $scope.greeting = 'Hola!';
-    var parameters = { tags : {} };
-        //Get List of users and add to mentor list
-      $.post('/mentors/search', parameters, function (data) {
-        console.log(data);
-        // $.each(data, function (i, mentor) {
-            $('.mentor-search').append($('<option>', {
-                value: 'mentor',
-                text: 'mentor-text'
-            }));
-        // });
-      });
+    $scope.subsection_list = ['social media', 'culture', 'politics', 'other religions'];
+     /*
+    ['drawing', 'music', 'design', 'photography']
+    ['moba', 'fps', 'rpg', 'casual/mobile']
+    ['social media', 'culture', 'politics', 'other religions']
+    */
 
-        
-
-        $('.mentor-search').chosen({width: '50%'});
     $(function() {
         console.log("loaded");
-
-
 
         $("input#tags_submit").click(function(event) {
             console.log("searching!");
@@ -47,11 +37,17 @@ myApp.controller('connectController', ['$scope', function($scope) {
 
             console.log("sorting!");
 
-            var parameters = { tags : {tag} };
+            var tags_list = Array();
+            tags_list.push(tag);
+
+            var parameters = { "tags" : tags_list };
             console.log("parameters:" + parameters);
             $.post("/mentors/search", parameters, function(data) {
                 console.log(data);
-                $("div#mentor_names").html(data);
+                $("div#mentor_names").html("");
+                for (var index in data) {
+                    $("div#mentor_names").append("<div class='mentor'>" + data[index].username + "</div>");
+                }
             });
         });
     });

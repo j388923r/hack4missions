@@ -1,13 +1,7 @@
-h1{
-	color:white;
-}
-
-#userview{
-	color:white;
-}
 
 #userview-main-div{
 	padding:10px;
+	text-align:center;
 }
 
 /* NOT USING THIS ATM
@@ -29,19 +23,6 @@ h1{
 	display:block;
 }
 
-/*
-#userview-portrait{
-	width:50%;
-	height:auto;
-	border:3px black solid;
-	left:0;
-	right:0;
-	margin:auto;
-	position:absolute;
-	display:block;
-	background-color:#ffffff;
-}*/
-
 #userview-portrait{
 	width:100px;
 	height:100px;
@@ -54,14 +35,29 @@ h1{
 }
 
 #userview-name{
-	padding:0px 0px 10px 0px;
+	padding:0px 0px 20px 0px;
 	margin:0;
-	text-align: left;
+	font-size:12em;
+	color:black;
+}
+
+
+
+#userview-bio{
+	font-size:1.5em;
 }
 
 #userview-tags{
-	font-style:italic;
+	font-size:1.5em;
+	font-style: italic;
 }
+
+
+
+
+
+
+
 
 /*
   css taken from Stephen Burgess

@@ -8,22 +8,20 @@ myApp.controller('connectController', ['$scope', function($scope) {
     ['moba', 'fps', 'rpg', 'casual/mobile']
     ['social media', 'culture', 'politics', 'other religions']
     */
-    var parameters = { tags : {} };
-      // $.post('/mentors/search', parameters, function (data) {
-      //   //Populates the dropdown with a list of mentors
-      // });
+    
+    //   //Populates the dropdown with a list of mentors
+    //var parameters = { tags : {} };
+    // $.post('/mentors/search', parameters, function (data) {
+    // });
 
     $('.mentor-search').chosen({width: '50%'});
     $('.mentor-search').on('change', function(data) {
         var parameters = { name: $(this).val() };
-        console.log(parameters);
         $.post('/mentors/searchByName', parameters, function(data) {
-            console.log('mentor by name');
-            console.log(data);
             $('#mentor_names').html(data);
         });
     });
-    
+
     $(function() {
         console.log("loaded");
 

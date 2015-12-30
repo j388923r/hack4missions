@@ -29,8 +29,6 @@ router.post('/search', function(req, res) {
 });
 
 router.post('/searchByName', function (req, res) {
-	console.log('search by name api');
-	console.log(req.body);
 	users.findByName(req.body.name, function (err, results) {
 		if (err){
 			console.log(err);

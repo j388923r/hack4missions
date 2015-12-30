@@ -7,17 +7,14 @@
 #tagSearch {
 	padding-top:2%;
 }
-#tagSection h2{
-	font-size:1.2em;
-}
 .interestTag {
-	background-color:#fff;
-	padding:2% 0;
+	background-color:#1d77bd;
+	color:#f8f8f8;
+	padding:20% 0;
 	text-align:center;
 	vertical-align:middle;
 	cursor:pointer;
-	border:1px solid #c0c0c0;
-	border-radius:4px;
+	text-transform:uppercase;
 }
 .interestTag:hover {
 	background-color:#e0e0e0;

@@ -18,7 +18,8 @@ articleSchema.statics.findAll = function(callback) {
 	Article.find({}, callback);
 };
 
-articleSchema.statics.findById = function(id, callback) {
+articleSchema.statics.findWithId = function(id, callback) {
+	console.log(id);
 	Article.findById(id, callback);
 }
 

@@ -28,6 +28,10 @@ userSchema.statics.findByTags = function(tags_list, cb) {
     return this.find({tags: {$all : tags_list}}, cb);
 }
 
-var User = mongoose.model('User', userSchema, 'users');
+userSchema.statics.findByName = function(name, callback) {
+	return this.find({ "username" : name}, callback);
+}
+
+var User = mongoose.model('User', userSchema);
 
 module.exports = User;

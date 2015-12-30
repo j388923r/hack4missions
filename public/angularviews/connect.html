@@ -1,24 +1,31 @@
-<link rel='stylesheet' href='/stylesheets/connect.css' />
+<head>
+	<script type="text/javascript" src="Chosen/chosen.jquery.min.js"></script>
+	<link rel='stylesheet' href='/stylesheets/connect.css' />
+</head>
+<div ng-include src="'angularviews/header.html'"></div>
 <div class="container-fluid">
 	<div id="wrap">
 		<center class="tagSearch">
-		    <input type="text" name="tags" id="tags_input" autofocus />
-		    <input type="submit" value="Submit" id="tags_submit" />
-		</center>
+		    <select class="mentor-search" data-placeholder="Search by name">
+		    	<option value="John Doe">John Doe</option>
+		    	<option value="Alice Liu">Alice Liu</option>
+		    </select>
+
+	    </center>
 		<div class="tagSection">
 			<a class="primaryTagButton" href="#" id="creativeTag">
 				<div class="col-md-4 col-xs-4">
-					<h2 class="interestTag">#creative</h2>
+					<h2 class="interestTag">creative</h2>
 				</div>
 			</a>
 			<a class="primaryTagButton" href="#" id="gamingTag">
 				<div class="col-md-4 col-xs-4">
-					<h2 class="interestTag">#gaming</h2>
+					<h2 class="interestTag">gaming</h2>
 				</div>
 			</a>
 			<a class="primaryTagButton" href="#" id="socialTag">
 				<div class="col-md-4 col-xs-4">
-					<h2 class="interestTag">#social</h2>
+					<h2 class="interestTag">social</h2>
 				</div>
 			</a>
 		</div>

@@ -16,7 +16,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
   }).when('/connect', {
 	  controller : 'connectController',
 	  templateUrl : '/angularviews/connect.html'
-  }).when('/category/:tag', {
+  }).when('/category', {
 	  controller : 'categoryController',
 	  templateUrl : '/angularviews/category.html'
   }).when('/articles', {
@@ -41,7 +41,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
 	  controller : 'askController',
 	  templateUrl : '/angularviews/ask.html'	 
   }).when('/userView', {
-	  controller : 'askController',
-	  templateUrl : '/angularviews/userView.html'
-  })
+	controller : 'userViewController',
+	templateUrl : '/angularviews/userView.html'
+  });
 }]);

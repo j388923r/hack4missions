@@ -72,7 +72,7 @@ div.home-footer a {
 }
 
 #creativeTag {
-
+    font-size: 200%;
 }
 #gamingTag {
 
@@ -86,12 +86,12 @@ div.home-footer a {
 }
 
 #category h1{
-    background-color: orange;
+    background-color: #e36f1e;
     text-align: center;
 }
 
 #type h1{
-    background-color: orange;   
+    background-color: #e36f1e;   
     text-align: center;
 }
 

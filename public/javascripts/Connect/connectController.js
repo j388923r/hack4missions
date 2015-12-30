@@ -2,6 +2,12 @@ var myApp = angular.module('myApp');
 
 myApp.controller('connectController', ['$scope', function($scope) {
     $scope.greeting = 'Hola!';
+    $scope.subsection_list = ['social media', 'culture', 'politics', 'other religions'];
+     /*
+    ['drawing', 'music', 'design', 'photography']
+    ['moba', 'fps', 'rpg', 'casual/mobile']
+    ['social media', 'culture', 'politics', 'other religions']
+    */
     var parameters = { tags : {} };
       // $.post('/mentors/search', parameters, function (data) {
       //   //Populates the dropdown with a list of mentors
@@ -53,7 +59,10 @@ myApp.controller('connectController', ['$scope', function($scope) {
             console.log("parameters:" + parameters);
             $.post("/mentors/search", parameters, function(data) {
                 console.log(data);
-                $("div#mentor_names").html(data);
+                $("div#mentor_names").html("");
+                for (var index in data) {
+                    $("div#mentor_names").append("<div class='mentor'>" + data[index].username + "</div>");
+                }
             });
         });
     });

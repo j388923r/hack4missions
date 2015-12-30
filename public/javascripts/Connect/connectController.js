@@ -2,9 +2,25 @@ var myApp = angular.module('myApp');
 
 myApp.controller('connectController', ['$scope', function($scope) {
     $scope.greeting = 'Hola!';
+    var parameters = { tags : {} };
+        //Get List of users and add to mentor list
+      $.post('/mentors/search', parameters, function (data) {
+        console.log(data);
+        // $.each(data, function (i, mentor) {
+            $('.mentor-search').append($('<option>', {
+                value: 'mentor',
+                text: 'mentor-text'
+            }));
+        // });
+      });
 
+        
+
+        $('.mentor-search').chosen({width: '50%'});
     $(function() {
         console.log("loaded");
+
+
 
         $("input#tags_submit").click(function(event) {
             console.log("searching!");

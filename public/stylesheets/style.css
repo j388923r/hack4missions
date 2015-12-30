@@ -38,6 +38,9 @@ a {
 .tagSearch {
 	padding-top:2%;
 }
+.tagSection h2{
+	font-size:1.2em;
+}
 .interestTag {
 	background-color:#fff;
 	padding:2% 0;

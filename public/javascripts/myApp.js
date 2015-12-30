@@ -15,10 +15,10 @@ myApp.config(['$routeProvider', function($routeProvider) {
 	  templateUrl : '/angularviews/learn.html'
   }).when('/connect', {
 	  controller : 'connectController',
-	  templateUrl : '/angularviews/connect.html'
-  }).when('/category/:tag', {
+	  templateUrl : '/angularViews/connect.html'
+  }).when('/category', {
 	  controller : 'categoryController',
-	  templateUrl : '/angularviews/category.html'
+	  templateUrl : '/angularViews/category.html'
   }).when('/articles', {
 	  controller : 'articlesController',
 	  templateUrl : '/angularviews/articles.html'
@@ -40,8 +40,5 @@ myApp.config(['$routeProvider', function($routeProvider) {
   }).when('/ask', {
 	  controller : 'askController',
 	  templateUrl : '/angularviews/ask.html'	 
-  }).when('/userView', {
-	  controller : 'askController',
-	  templateUrl : '/angularviews/userView.html'
-  })
+  });
 }]);

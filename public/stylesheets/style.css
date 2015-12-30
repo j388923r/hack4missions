@@ -1,9 +1,14 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 120%;
 }
 
 a {
   color: #00B7FF;
+}
+
+a {
+	color: #1d77bd;
 }
 
 div.home-center, div.home-footer {

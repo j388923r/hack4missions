@@ -1,0 +1,27 @@
+/******************/
+/* Connect styles */
+/******************/
+#wrap .col-md-4, .col-xs-4, .col-md-1, .col-xs-1 {
+	padding:0 1%;
+}
+#tagSearch {
+	padding-top:2%;
+}
+#tagSection h2{
+	font-size:1.2em;
+}
+.interestTag {
+	background-color:#fff;
+	padding:2% 0;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	border:1px solid #c0c0c0;
+	border-radius:4px;
+}
+#tagSubsection {
+	font-size:0.8em;
+}
+.interestSubtag {
+	
+}

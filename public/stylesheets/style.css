@@ -30,6 +30,7 @@ a {
 #header {
 	position: fixed;
 	bottom: 0;
+<<<<<<< HEAD
 }
 
 /******************/
@@ -77,4 +78,6 @@ a {
 #category_title{
     text-align: center;
     color: greenyellow;
+=======
+>>>>>>> 1bb0867627dbca0fef40cd19fa2d1e098b351a12
 }

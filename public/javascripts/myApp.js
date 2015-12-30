@@ -40,5 +40,8 @@ myApp.config(['$routeProvider', function($routeProvider) {
   }).when('/ask', {
 	  controller : 'askController',
 	  templateUrl : '/angularviews/ask.html'	 
+  }).when('/userView', {
+	  controller : 'askController',
+	  templateUrl : '/angularviews/userView.html'
   })
 }]);

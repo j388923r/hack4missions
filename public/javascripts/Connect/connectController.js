@@ -44,7 +44,10 @@ myApp.controller('connectController', ['$scope', function($scope) {
 
             console.log("sorting!");
 
-            var parameters = { tags : {tag} };
+            var tags_list = Array();
+            tags_list.push(tag);
+
+            var parameters = { "tags" : tags_list };
             console.log("parameters:" + parameters);
             $.post("/mentors/search", parameters, function(data) {
                 console.log(data);

@@ -14,13 +14,10 @@ myApp.controller('connectController', ['$scope', function($scope) {
         // });
       });
 
-        
-
-        $('.mentor-search').chosen({width: '50%'});
+    $('.mentor-search').chosen({width: '50%'});
+    
     $(function() {
         console.log("loaded");
-
-
 
         $("input#tags_submit").click(function(event) {
             console.log("searching!");

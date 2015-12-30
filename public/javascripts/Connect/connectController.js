@@ -2,6 +2,12 @@ var myApp = angular.module('myApp');
 
 myApp.controller('connectController', ['$scope', function($scope) {
     $scope.greeting = 'Hola!';
+    $scope.subsection_list = ['social media', 'culture', 'politics', 'other religions'];
+     /*
+    ['drawing', 'music', 'design', 'photography']
+    ['moba', 'fps', 'rpg', 'casual/mobile']
+    ['social media', 'culture', 'politics', 'other religions']
+    */
 
     $(function() {
         console.log("loaded");

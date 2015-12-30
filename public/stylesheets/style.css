@@ -27,7 +27,7 @@ a {
 	//margin-top: 60%;
 }
 
-#header {
+#header .container {
 	position: fixed;
 	bottom: 0;
 }

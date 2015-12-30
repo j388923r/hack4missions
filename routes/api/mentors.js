@@ -17,4 +17,8 @@ router.post('/search', function(req, res, next) {
     res.send(users.findByTags(req.query.tags));
 });
 
+router.post('/searchByName', function (req, res, next) {
+	res.send(users.findByName(req.query.name));
+});
+
 module.exports = router;

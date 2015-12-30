@@ -3,24 +3,20 @@ var myApp = angular.module('myApp');
 myApp.controller('connectController', ['$scope', function($scope) {
     $scope.greeting = 'Hola!';
     var parameters = { tags : {} };
-        //Get List of users and add to mentor list
-      $.post('/mentors/search', parameters, function (data) {
-        console.log(data);
-        // $.each(data, function (i, mentor) {
-            $('.mentor-search').append($('<option>', {
-                value: 'mentor',
-                text: 'mentor-text'
-            }));
-        // });
-      });
+      // $.post('/mentors/search', parameters, function (data) {
+      //   //Populates the dropdown with a list of mentors
+      // });
 
-        
+    $('.mentor-search').chosen({width: '50%'});
+    $('.mentor-search').on('change', function(data) {
+        var parameters = { name: $(this).val() };
+        $.post('/mentors/searchByName', parameters, function (data) {
+            $('#mentor_names').html(data);
+        });
+    });
 
-        $('.mentor-search').chosen({width: '50%'});
     $(function() {
         console.log("loaded");
-
-
 
         $("input#tags_submit").click(function(event) {
             console.log("searching!");
@@ -47,7 +43,10 @@ myApp.controller('connectController', ['$scope', function($scope) {
 
             console.log("sorting!");
 
-            var parameters = { tags : {tag} };
+            var tags_list = Array();
+            tags_list.push(tag);
+
+            var parameters = { "tags" : tags_list };
             console.log("parameters:" + parameters);
             $.post("/mentors/search", parameters, function(data) {
                 console.log(data);

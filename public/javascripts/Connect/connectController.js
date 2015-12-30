@@ -2,8 +2,25 @@ var myApp = angular.module('myApp');
 
 myApp.controller('connectController', ['$scope', function($scope) {
   $scope.greeting = 'Hola!';
+  
+  //Get List of users and add to mentor list
+  $.get('/', function (data) {
+    console.log(data);
+    $.each(data, function (i, mentor) {
+        $('.mentor-search').append($('<option>', {
+            value: 'mentor',
+            text: 'mentor-text'
+        }));
+    });
+  });
+  // $.each(items, function (i, item) {
+  //   $('#mySelect').append($('<option>', { 
+  //       value: item.value,
+  //       text : item.text 
+  //   }));
+  // });
 
-  $('.mentor-search').chosen();
+  $('.mentor-search').chosen({width: '50%'});
 }]);
 
 $(function() {

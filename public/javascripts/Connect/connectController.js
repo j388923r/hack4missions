@@ -9,12 +9,13 @@ myApp.controller('connectController', ['$scope', function($scope) {
 
     $('.mentor-search').chosen({width: '50%'});
     $('.mentor-search').on('change', function(data) {
+        console.log($(this).val());
         var parameters = { name: $(this).val() };
         $.post('/mentors/searchByName', parameters, function (data) {
             $('#mentor_names').html(data);
         });
     });
-
+    
     $(function() {
         console.log("loaded");
 

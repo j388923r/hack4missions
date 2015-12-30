@@ -1,5 +1,5 @@
 var myApp = angular.module('myApp');
 
-myApp.controller('podcastController', ['$scope', function($scope) {
-  
+myApp.controller('categoryController', ['$scope', '$routeParams', function($scope, $routeParams) {
+  $scope.category = $routeParams.tag;
 }]);

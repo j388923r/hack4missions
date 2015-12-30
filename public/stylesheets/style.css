@@ -27,11 +27,20 @@ a {
 	//margin-top: 60%;
 }
 
+#header {
+	position: fixed;
+	bottom: 0;
+<<<<<<< HEAD
+}
+
 /******************/
 /* Connect styles */
 /******************/
 .tagSearch {
 	padding-top:2%;
+}
+.tagSection h2{
+	font-size:1.2em;
 }
 .interestTag {
 	background-color:#fff;
@@ -50,4 +59,25 @@ a {
 }
 #socialTag {
 
+}
+
+#category ul{
+    list-style: none;
+}
+
+#category h1{
+    background-color: orange;
+    text-align: center;
+}
+
+#type h1{
+    background-color: orange;   
+    text-align: center;
+}
+
+#category_title{
+    text-align: center;
+    color: greenyellow;
+=======
+>>>>>>> 1bb0867627dbca0fef40cd19fa2d1e098b351a12
 }

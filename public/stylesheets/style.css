@@ -15,7 +15,10 @@ div.home-center, div.home-footer {
 }
 
 div.home-center img {
-  width: 100%;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 div.home-footer {
@@ -59,7 +62,7 @@ div.home-footer a {
 	//margin-top: 60%;
 }
 
-#header {
+#header .container {
 	position: fixed;
 	bottom: 0;
 <<<<<<< HEAD

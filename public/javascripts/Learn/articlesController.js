@@ -1,6 +1,6 @@
 var myApp = angular.module('myApp');
 
-myApp.controller('articlesController', ['$scope', function($scope) {
+myApp.controller('articlesController', ['$scope', '$http', function($scope, $http) {
   $scope.articles = [
   {
 	  id: 1,
@@ -37,5 +37,15 @@ myApp.controller('articlesController', ['$scope', function($scope) {
 	  imageUrl: "",
 	  title: "Demo Video6",
 	  description: "Long Description"
-  }]
+  }];
+  
+  $http.get('/api/articles').success(function(data){
+	  console.log("data", data);
+  });
+  
+  $scope.submitArticle = function() {
+	  $http.post('/api/articles', {title: , description: , imageUrl: , link: }).success(function(data){
+		  console.log(data);
+	  })
+  };
 }]);

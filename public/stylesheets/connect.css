@@ -1,6 +1,9 @@
 #wrap .col-md-4, .col-xs-4 {
 	padding:0 1%;
 }
+#wrap .col-md-2, .col-xs-2 {
+	padding:0 0.5%;
+}
 #tagSearch {
 	padding-top:2%;
 }
@@ -23,9 +26,10 @@
 	font-size:0.8em;
 }
 .interestSubtag {
-	background-color:#e0e0e0;
-}
-.interestSubtag p {
-	padding:1% 0;
-	margin:0;
+	background-color:#e0e0e0;	
+	padding:1.5% 0;
+	border-radius:4px;
+	cursor:pointer;
+	text-align:center;
+	vertical-align:middle;
 }

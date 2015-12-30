@@ -2,12 +2,7 @@ var myApp = angular.module('myApp');
 
 myApp.controller('connectController', ['$scope', function($scope) {
     $scope.greeting = 'Hola!';
-    $scope.subsection_list = ['social media', 'culture', 'politics', 'other religions'];
-     /*
-    ['drawing', 'music', 'design', 'photography']
-    ['moba', 'fps', 'rpg', 'casual/mobile']
-    ['social media', 'culture', 'politics', 'other religions']
-    */
+    $scope.subsection_list = ['blah'];
 
     $(function() {
         console.log("loaded");
@@ -34,6 +29,17 @@ myApp.controller('connectController', ['$scope', function($scope) {
             var id = $(this).attr("id");
             console.log("id: " + id);
             var tag = id.substring(0, id.length - 3);
+
+            if (tag == "creative") {
+                console.log("SETTING CREATIVE");
+                console.log($scope.subsection_list);
+                $scope.subsection_list = ['drawing', 'music', 'design', 'photography'];
+                console.log($scope.subsection_list);
+            } else if (tag == "gaming") {
+                $scope.subsection_list = ['moba', 'fps', 'rpg', 'casual/mobile'];
+            } else if (tag == "social") {
+                $scope.subsection_list = ['social media', 'culture', 'politics', 'other religions'];
+            }
 
             console.log("sorting!");
 

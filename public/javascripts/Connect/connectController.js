@@ -2,11 +2,9 @@ var myApp = angular.module('myApp');
 
 myApp.controller('connectController', ['$scope', function($scope) {
     $scope.greeting = 'Hola!';
-
-    $(function() {
-      var parameters = { tags : {} };
+    var parameters = { tags : {} };
         //Get List of users and add to mentor list
-      $.post('/search', parameters, function (data) {
+      $.post('/mentors/search', parameters, function (data) {
         console.log(data);
         // $.each(data, function (i, mentor) {
             $('.mentor-search').append($('<option>', {
@@ -16,9 +14,13 @@ myApp.controller('connectController', ['$scope', function($scope) {
         // });
       });
 
-        $('.mentor-search').chosen({width: '50%'});
+        
 
+        $('.mentor-search').chosen({width: '50%'});
+    $(function() {
         console.log("loaded");
+
+
 
         $("input#tags_submit").click(function(event) {
             console.log("searching!");

@@ -15,7 +15,10 @@ div.home-center, div.home-footer {
 }
 
 div.home-center img {
-  width: 100%;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 div.home-footer {
@@ -59,30 +62,12 @@ div.home-footer a {
 	//margin-top: 60%;
 }
 
-#header {
+#header .container {
 	position: fixed;
 	bottom: 0;
 <<<<<<< HEAD
 }
 
-/******************/
-/* Connect styles */
-/******************/
-.tagSearch {
-	padding-top:2%;
-}
-.tagSection h2{
-	font-size:1.2em;
-}
-.interestTag {
-	background-color:#fff;
-	padding:2% 0;
-	text-align:center;
-	vertical-align:middle;
-	cursor:pointer;
-	border:1px solid #c0c0c0;
-	border-radius:4px;
-}
 #creativeTag {
     font-size: 200%;
 }

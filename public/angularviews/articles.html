@@ -3,11 +3,12 @@
 <center>
 	<h2 class="typeHeader">Articles</h2>
 </center>
+<button ng-click="submitArticle()">Submit Article</button>
 <div class="container">
 	<div class="row">
 		<div class="col-md-4 col-sm-6" ng-repeat="item in articles">
 			<img ng-src="{{item.imageUrl}}" width=200 height=200>
-			<a href="/#/articles/{{item.id}}"><h4>{{item.title}}</h4><a>
+			<a href="/#/articles/{{item.id }}"><h4>{{item.title}}</h4><a>
 			<div>{{item.description}}</div>
 		</div>
 	</div>

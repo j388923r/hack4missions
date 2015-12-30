@@ -14,8 +14,7 @@ router.get('/:id', function(req, res, next) {
 });
 
 router.post('/search', function(req, res, next) {
-    //users.findByTags(req.query.tags);
-    res.send("something");
+    res.send(users.findByTags(req.query.tags));
 });
 
 module.exports = router;

@@ -25,6 +25,10 @@ userSchema.statics.addExpertise = function(id, expertise) {
  * which match all the tags in the TAGS array. */
 userSchema.statics.findByTags = function(tags_list) {
     console.log(tags_list);
-    return this.find({ tags : { $all : tags_list }});
+    //return this.find({ "tags" : { "$all" : tags_list }});
+    return "something";
 }
 
+var User = mongoose.model('User', userSchema);
+
+module.exports = User;

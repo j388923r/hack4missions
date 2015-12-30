@@ -2,14 +2,27 @@
 <div ng-include src="'angularviews/header.html'"></div>
 
 <div id= "category">
-	<h1>Category</h1>
+	<h1>Category Tags</h1>
 <!--            search bar-->
 	<ul>
-		<select class="chosen-select" data-placeholder="Choose a tag...">
-            <option>#creative</option>
-            <option>#social</option>
+		<select placeholder= "Search for tags... " class="chosen-select" style= "width: 350px;">
+            <option value="" default selected>Select a tag</option>
+            <option value="drawing">Drawing</option>
+            <option value="music">Music</option>
+            <option value="design">Design</option>
+            <option value="photography">Photography</option>
+            <option value="MOBA">MOBA</option>
+            <option value="FPS">FPS</option>
+            <option value="RPG">RPG</option>
+            <option value="casualmobile">Casual/Mobile</option>
+            <option value="socialmedia">SocialMedia</option>
+            <option value="evangelism">Evangelism</option>
+            <option value="culture">Culture</option>
+            <option value="spiritualformation">SpiritualFormation</option>
         </select>
-
+        <li><a href="/#/category/creative">#creative</a></li>
+        <li><a href="/#/category/games">#games</a></li>
+        <li><a href="/#/category/social">#social</a></li>
 	</ul>
 </div>
 <div id= "type">
@@ -18,12 +31,12 @@
 	<div clas="container">
 		<div class="row">
 			<div class="col-md-4">
-				<a href="article.html"><img src="images/articles.png" href="article.html" style="width:200px;height:200;"></a>
+				<a href="/#/articles"><img src="images/articles.png" href="article.html" style="width:200px;height:200;"></a>
 			</div>
 			<div class="col-md-4">
-				<a href="video.html"><img src="images/videos.png" href="video.html" style="width:200px;height:200;"></a>
+				<a href="/#/videos"><img src="images/videos.png" href="video.html" style="width:200px;height:200;"></a>
 			</div>
-			<div class="col-md-4"><a href="podcast.html"><img src="images/podcasts.png" href="article.html" style="width:200px;height:200;"></a></div>
+			<div class="col-md-4"><a href="/#/podcasts"><img src="images/podcasts.png" href="article.html" style="width:200px;height:200;"></a></div>
 		</div>
 		
 	</div>

@@ -1,13 +1,21 @@
+<head>
+<script type="text/javascript" src="Chosen/chosen.jquery.min.js"></script>
+</head>
 <div ng-include src="'angularviews/header.html'"></div>
 
 <div id= "category">
 	<h1>Category</h1>
 <!--            search bar-->
 	<ul>
-		<li>-- Search Bar --</li>
-		<li><a href="creative.html">#creative</a></li>
-		<li><a href="games.html">#games</a></li>
-		<li><a href="social.html">#social</a></li>
+		<select class="chosen-select" data-placeholder="Choose a tag...">
+            <option>#creative</option>
+            <option>#creative</option>
+        </select>
+		<ul>
+            <li class = "tag"><a href="/#/category/creative">#creative</a></li>
+            <li class = "tag"><a href="/#/category/games">#games</a></li>
+            <li class = "tag"><a href="/#/category/social">#social</a></li>
+        </ul>
 	</ul>
 </div>
 <div id= "type">

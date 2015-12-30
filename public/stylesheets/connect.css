@@ -1,7 +1,4 @@
-/******************/
-/* Connect styles */
-/******************/
-#wrap .col-md-4, .col-xs-4, .col-md-1, .col-xs-1 {
+#wrap .col-md-4, .col-xs-4 {
 	padding:0 1%;
 }
 #tagSearch {
@@ -19,9 +16,16 @@
 	border:1px solid #c0c0c0;
 	border-radius:4px;
 }
+.interestTag:hover {
+	background-color:#e0e0e0;
+}
 #tagSubsection {
 	font-size:0.8em;
 }
 .interestSubtag {
-	
+	background-color:#e0e0e0;
+}
+.interestSubtag p {
+	padding:1% 0;
+	margin:0;
 }

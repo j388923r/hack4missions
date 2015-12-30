@@ -13,8 +13,19 @@ router.get('/:id', function(req, res, next) {
   res.send("Returning user with id: " + req.params.id);
 });
 
-router.post('/search', function(req, res, next) {
-    res.send(users.findByTags(req.query.tags));
+router.post('/search', function(req, res) {
+    //res.send(users.findByTags(req.query.tags));
+    
+    console.log(req.body);
+    console.log("tags: " + req.body["tags[]"]);
+
+    var tags_list = req.body["tags[]"];
+
+    //res.json(users.findByTags(tags_list, function() {}));
+
+    users.findByTags(tags_list, function(err, results) {
+        res.json(results);
+    });
 });
 
 module.exports = router;

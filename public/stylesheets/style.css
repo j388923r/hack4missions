@@ -23,14 +23,13 @@ div.home-center img {
 div.home-footer {
   text-align: center;
   font-size: 2.5em;
-  color: white;
   position: fixed;
   width: 100%;
   bottom: 50px;
 }
 
 div.home-footer a {
-  color: black;
+  color: #1d77bd;
 }
 
 .homePageButton {
@@ -39,6 +38,7 @@ div.home-footer a {
   padding: 40px 20px;
   margin-bottom: 60px;
   border-radius: 25px;
+  border: 1px solid #e36f1e;
 }
 
 .homePageButton div {

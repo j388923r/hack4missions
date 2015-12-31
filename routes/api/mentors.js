@@ -28,8 +28,14 @@ router.post('/search', function(req, res) {
     });
 });
 
-router.post('/searchByName', function (req, res, next) {
-	res.send(users.findByName(req.body.name));
+router.post('/searchByName', function (req, res) {
+	users.findByName(req.body.name, function (err, results) {
+		if (err){
+			console.log(err);
+			res.send(err);
+		} else
+			res.json(results);
+	});
 });
 
 module.exports = router;
